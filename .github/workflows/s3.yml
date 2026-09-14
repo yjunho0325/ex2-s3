@@ -21,4 +21,4 @@ jobs:
     - name: S3 정적웹사이트로 배포
       run:
         # 전체 동기화
-        aws s3 sync html/ s3://std08-v1-bucket/ --delete --acl public-read
+        aws s3 sync html/ s3://std08-v1-bucket/ --delete # --acl public-read
