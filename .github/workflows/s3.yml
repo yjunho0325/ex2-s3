@@ -15,8 +15,8 @@ jobs:
       uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{secrets.AWS_ACCESS_KEY}}
-        aws-secret-access-key-id: ${{secrets.AWS_SECRET_ACCESS_KEY}}
-        aws-region: ap-southeast-2
+        aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+        aws-region: ${{secrets.AWS_REGION}}
 
     - name: S3 정적웹사이트로 배포
       run:
